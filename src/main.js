@@ -5,9 +5,7 @@ import store from './store'
 //  ElementUI 组件库
 import ElementUI from 'element-ui';
 import 'element-ui/lib/theme-chalk/index.css';
-import App from "./App.vue";
-import router from "./router";
-import store from './store'
+
 // 使用 ElementUI
 Vue.use(ElementUI);
 // 权限拦截

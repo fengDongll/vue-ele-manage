@@ -14,7 +14,7 @@ export default new Router({
     {
       path: '/login',
       name: 'login', //路由名称
-      component:()=>import(Login)  //组件对象
+      component:Login  //组件对象
     },
     {
       path: '/',
@@ -24,7 +24,7 @@ export default new Router({
       children: [
         {
           path: '/home',
-          component:()=>import(Home),
+          component:Home,
           meta: {title: '首页'}
         },
       ]
@@ -35,7 +35,7 @@ export default new Router({
       children: [
         {
           path: '/', 
-          component:()=>import(Member),
+          component:Member,
           meta: {title: '会员管理'}
         }
       ]
@@ -46,29 +46,29 @@ export default new Router({
       children: [
         {
           path: '/', 
-          component:()=>import(Supplier),
+          component:Supplier,
           meta: {title: '供应商管理'}
         }
       ]
     },
     {
       path: '/goods',
-      component:()=>import(Layout),
+      component:Layout,
       children: [
         {
           path: '/', 
-          component:()=>import(Goods),
+          component:Goods,
           meta: {title: '商品管理'}
         }
       ]
     },
     {
       path: '/staff',
-      component:()=>import(Layout),
+      component:Layout,
       children: [
         {
           path: '/', 
-          component:()=>import(Staff),
+          component:Staff,
           meta: {title: '员工管理'}
         }
       ]
